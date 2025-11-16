@@ -21,7 +21,7 @@ export class ErrorBoundary extends React.Component<
 	render() {
 		if (this.state.hasError) {
 			return (
-				<div className="flex flex-col items-center gap-2">
+				<div className="flex flex-col items-center gap-2 bg-black border border-white/30 border-solid rounded-md p-6">
 					<h1 className="font-bold text-2xl text-white">
 						Ocorreu um erro, contate o desenvolvedor
 					</h1>

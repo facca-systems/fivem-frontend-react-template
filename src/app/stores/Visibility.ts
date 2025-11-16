@@ -26,7 +26,7 @@ export const useVisibilityStore = create<VisibilityStore & VisiblityActions>()(
 
 			if (!visible) return;
 
-			const resp = await fetchNui({ path: "hideFrame", mockData: true });
+			const resp = await fetchNui({ path: "post:closeUi", mockData: true });
 
 			if (resp) {
 				set({ visible: false });

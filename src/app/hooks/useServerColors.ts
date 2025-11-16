@@ -13,7 +13,7 @@ export const useServerColors = () => {
 			const data = await fetchNui<
 				| { primaryColor: string; secondaryColor: string; thirdyColor: string }
 				| keyof typeof ColorVariants
-			>({ path: "getColors", mockData: "FACCA" });
+			>({ path: "get:colors", mockData: "FACCA" });
 
 			if (!data) return;
 

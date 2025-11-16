@@ -1,5 +1,0 @@
-- [X] Validação de imagem como true por padrão
-- [X] NuiCallback -> NUICallback no client
-- [X] Remover Console.log useClickSound e validação de not-allowed
-- [X] Try Catch Fetch Nui
-- [X] Sem a declaração NUI no fxmanifest

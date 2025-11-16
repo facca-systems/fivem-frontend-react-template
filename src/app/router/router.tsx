@@ -2,7 +2,6 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 
 import { useVisibilityStore } from "@app/stores/Visibility";
 import { lazyLoad } from "@app/utils/lazyLoad";
-import { isEnvBrowser } from "@app/utils/misc";
 import { NotFound } from "@views/components/NotFound";
 import { SpinLoader } from "@views/components/SpinLoader";
 import { Layout } from "@views/layout";
@@ -19,7 +18,7 @@ export function Router() {
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
-		if (!visible || isEnvBrowser()) return;
+		if (!visible) return;
 
 		navigate(DEFAULT_PAGE, { replace: true });
 	}, [visible]);

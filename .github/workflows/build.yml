@@ -12,9 +12,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
 
       - run: bun install
-        working-directory: src/ui
       - run: bun run build
-        working-directory: src/ui
 
       - name: Commit changes
         run: |
