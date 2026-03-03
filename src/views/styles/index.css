@@ -13,13 +13,13 @@
 }
 
 html {
-	font-size: 0.833vw;
+    font-size: calc(min(0.833vw, 1.48vh) + 10%);
 }
 
 @media screen and (min-width: 2540px) {
-	html {
-		font-size: 0.54978vw;
-	}
+    html {
+        font-size: calc(min(0.54978vw, 1.48vh) + 2.5%);
+    }
 }
 
 body {
